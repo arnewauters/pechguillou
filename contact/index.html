@@ -1,0 +1,70 @@
+---
+layout: default
+title: Contact
+---
+<div class="container">
+  <div id="success" class="alert alert-success" style="display:none; margin-top:15px">
+    Your email was succesfuly sent! We'll be in touch soon.
+  </div>
+  <h3>Contact us</h3>
+  <p>Interested in going to Pech Guillou? Don't hesitate to let us know!</p>
+
+
+  <form id="contactForm">
+    <div class="row">
+      <div class="col-lg-6">
+        <div id="name-group" class="form-group">
+          <label class="control-label" for="name">Name</label>
+          <input type="text" class="form-control" id="name" name="name">
+        </div>
+        <div id="email-group" class="form-group">
+          <label class="control-label" for="email">Email</label>
+          <input type="email" class="form-control" id="email" name="email">
+        </div>
+        <div id="number-group" class="form-group">
+          <label class="control-label" for="number-of-people">Number of people</label>
+          <select class="form-control" id="number-of-people" name="number-of-people">
+            <option></option>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+            <option>6</option>
+            <option>7</option>
+            <option>8</option>
+            <option>9</option>
+            <option>10</option>
+            <option>11</option>
+            <option>12</option>
+            <option>13</option>
+            <option>14</option>
+            <option>15</option>
+            <option>16</option>
+            <option>17</option>
+        </select></div>
+      </div>
+      <div class="col-lg-6">
+        <div id="from-group" class="form-group">
+          <label class="control-label" for="from">From: </label>
+          <input type="text" class="form-control" id="from" name="from" placeholder="dd/mm/yyyy">
+        </div>
+        <div id="to-group" class="form-group">
+          <label class="control-label" for="to">To: </label>
+          <input type="text" class="form-control" id="to" name="to" placeholder="dd/mm/yyyy">
+        </div>
+        <div class="form-group">
+          <label class="control-label" for="extra">Extra information / Questions: </label>
+          <textarea class="form-control" rows="3" id="extra" name="extra"></textarea>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-2 col-lg-offset-10">
+        <button class="btn btn-default">Cancel</button>
+        <button id="submit" type="submit" class="btn btn-primary">Submit</button>
+      </div>
+    </div>
+  </form>
+  {% include footer.html %}
+</div>

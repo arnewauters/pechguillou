@@ -1,0 +1,41 @@
+<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/">
+        <span class="glyphicon glyphicon-home"></span>
+        Pech Guillou
+      </a>
+    </div>
+    <div class="navbar-collapse collapse pull-right">
+      <ul class="nav navbar-nav">
+
+        {% if page.title == "The House" %}
+            <li class="active"><a href="/">The House</a></li>
+        {% else %}
+            <li><a href="/">The House</a></li>
+        {% endif %}
+        {% if page.title == "Availability" %}
+            <li class="active"><a href="/availability">Availability</a></li>
+        {% else %}
+            <li><a href="/availability">Availability</a></li>
+        {% endif %}
+        {% if page.title == "Contact" %}
+            <li class="active"><a href="/contact">Concact</a></li>
+        {% else %}
+            <li><a href="/contact">Contact</a></li>
+        {% endif %}
+        {% if page.title == "Route" %}
+            <li class="active"><a href="/route">Route</a></li>
+        {% else %}
+            <li><a href="/route">Route</a></li>
+        {% endif %}
+      </ul>
+    </div><!--/.navbar-collapse -->
+  </div>
+</div>

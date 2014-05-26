@@ -1,0 +1,38 @@
+---
+layout: default
+title: Route
+---
+<div class="container">
+  <div class="row">
+    <div class="col-lg-12">
+      <h3>Route</h3>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-lg-7">
+      <div id="map_canvas" style="height:500px"></div>
+    </div>
+    <div class="col-lg-5">
+      <h4>Coordinates</h4>
+      <p>
+        Latitude: 44.276257<br >
+        Longitude: 0.834423
+      </p>
+      <h4>Address</h4>
+      <p>Pech Guillou,<br >
+      47470 Cauzac, <br >
+      France</p>
+      <h4>Calculate your route</h4>
+      <p>
+        You can either fill in an exact address or a more coarse-grained location such as a province or a city. The map will show you the route and directions in text will be loaded here for your convenience.
+      </p>
+      <div class="form-group">
+        <label class="control-label" for="end">From: </label>
+        <input type="text" class="form-control" id="end">
+      </div>
+      <button class="btn-primary" id="calcRoute">Calculate</button>
+      <div id="directions-panel"></div>
+    </div>
+  </div>
+  {% include footer.html %}
+</div>
