@@ -35,6 +35,11 @@
         {% else %}
             <li><a href="/route">Route</a></li>
         {% endif %}
+        {% if page.title == "Guestbook" %}
+            <li class="active"><a href="/guestbook">Guestbook</a></li>
+        {% else %}
+            <li><a href="/guestbook">Guestbook</a></li>
+        {% endif %}
       </ul>
     </div><!--/.navbar-collapse -->
   </div>

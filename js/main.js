@@ -2,13 +2,13 @@ $(function() {
   $('.slowscroll').click(function() {
     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
     var target = $(this.hash);
-  target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-  if (target.length) {
-    $('html,body').animate({
-      scrollTop: target.offset().top
-    }, 1000);
-    return false;
-  }
+    target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+    if (target.length) {
+      $('html,body').animate({
+        scrollTop: target.offset().top
+      }, 1000);
+      return false;
+    }
   }
   });
 });
@@ -84,20 +84,19 @@ if (document.getElementById("contactForm")) {
       return false;
     }
 
-    //var dataString = 'name='+ name + '&email=' + email + '&number=' + number
-              //        + '&from=' + from + '&to=' + to + '&extra=' + extra;
-    //alert (dataString);return false;
-    /*$.ajax({
+    var dataString = 'name='+ name + '&email=' + email + '&number=' + number
+                     + '&from=' + from + '&to=' + to + '&extra=' + extra;
+    $.ajax({
       type: "POST",
-      url: "http://getsimpleform.com/messages?form_api_token=1e02b8615467c549d4b89ed9d94998a5",
+      url: "http://getsimpleform.com/messages/ajax?form_api_token=1e02b8615467c549d4b89ed9d94998a5",
       data: dataString,
-      crossDomain: true,
+      dataType: 'jsonp',
       success: function() {
         $('#success').show('slow');
       }
-    }); */
+    });
 
-    return true;
+    return false;
   });
 }
 
@@ -137,5 +136,25 @@ if (document.getElementById("map_canvas")) {
     position: pech,
       map: map,
       title:"Pech Guillou Dream House!"
+  });
+}
+
+
+if (document.getElementById("guestbook_entries")) {
+  $.ajax({
+    type: "GET",
+    url: "http://getsimpleform.com/messages.js?api_token=0cf647952037956972ffb9a65dbb32bf",
+    dataType: 'jsonp',
+    success: function(data) {
+      var items = [];
+      $.each(data, function(key, val) {
+        items.push( "<li id='" + key + "'>" + val.data.name + "</li>" );
+      });
+
+      $( "<ul/>", {
+        "class": "my-new-list",
+        html: items.join( "" )
+      }).appendTo( "#guestbook_entries" );
+    }
   });
 }
