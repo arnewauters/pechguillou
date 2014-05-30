@@ -68,6 +68,12 @@ body {
   border-color: #5A84BA;
 }
 
+.panel-primary>.panel-heading {
+  color: #ffffff;
+  background-color: #6696D4;
+  border-color: transparent;
+}
+
 .carousel {
   margin-top: 30px;
   padding: 1px;

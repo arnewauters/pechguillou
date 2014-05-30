@@ -146,15 +146,17 @@ if (document.getElementById("guestbook_entries")) {
     url: "http://getsimpleform.com/messages.js?api_token=0cf647952037956972ffb9a65dbb32bf",
     dataType: 'jsonp',
     success: function(data) {
-      var items = [];
       $.each(data, function(key, val) {
-        items.push( "<li id='" + key + "'>" + val.data.name + "</li>" );
+        htmlstring = "<div class=\"panel panel-primary\">";
+        htmlstring += "<div class=\"panel-heading\">";
+        htmlstring += "<h3 class=\"panel-title\">" + val.data.name + "</h3>";
+        htmlstring +=  "</div>";
+        htmlstring += "<div class=\"panel-body\">";
+        htmlstring += val.data.extra;
+        htmlstring +=  "</div>";
+        htmlstring +=  "</div>";
+        $('#guestbook_entries').append(htmlstring);
       });
-
-      $( "<ul/>", {
-        "class": "my-new-list",
-        html: items.join( "" )
-      }).appendTo( "#guestbook_entries" );
     }
   });
 }
