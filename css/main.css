@@ -57,6 +57,10 @@ body {
   border-color: #E6E6E6;
 }
 
+.nav a span {
+  margin-right: 4px;
+}
+
 .btn-primary {
   color: #ffffff;
   background-color: #6696D4;
@@ -84,9 +88,14 @@ body {
   color: #999999;
 }
 
+.lead-title {
+  margin-bottom: 20px;
+}
+
 .transparent {
   background: transparent;
 }
+
 .img-border {
   padding: 1px;
   border: 1px solid #999999;

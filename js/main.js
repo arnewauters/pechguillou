@@ -92,7 +92,7 @@ if (document.getElementById("contactForm")) {
       data: dataString,
       dataType: 'jsonp',
       success: function() {
-        $('#success').show('slow');
+        $('#success').fadeTo(1500, 1);
       }
     });
 
@@ -101,6 +101,8 @@ if (document.getElementById("contactForm")) {
 }
 
 if (document.getElementById("map_canvas")) {
+  $('#directions-container').hide();
+
   var directionsDisplay = new google.maps.DirectionsRenderer();
   var directionsService = new google.maps.DirectionsService();
   var map;
@@ -114,6 +116,7 @@ if (document.getElementById("map_canvas")) {
     directionsService.route(request, function(response, status) {
       if (status == google.maps.DirectionsStatus.OK) {
         directionsDisplay.setDirections(response);
+        $('#directions-container').fadeTo(1500, 1);
       }
     });
   });
@@ -147,7 +150,7 @@ if (document.getElementById("guestbook_entries")) {
     dataType: 'jsonp',
     success: function(data) {
       $.each(data, function(key, val) {
-        htmlstring = "<div class=\"panel panel-primary\">";
+        htmlstring = "<div class=\"panel\">";
         htmlstring += "<div class=\"panel-heading\">";
         htmlstring += "<h3 class=\"panel-title\">" + val.data.name + "</h3>";
         htmlstring +=  "</div>";
