@@ -40,6 +40,7 @@ if (document.getElementById("contactForm")) {
     var number = $("select#number-of-people").val();
     var from = $("input#from").val();
     var to = $("input#to").val();
+    var extra = $("textarea#extra").val();
 
     var rgx = /(\d{2})\/(\d{2})\/(\d{4})/;
 
@@ -142,24 +143,76 @@ if (document.getElementById("map_canvas")) {
   });
 }
 
-
-if (document.getElementById("guestbook_entries")) {
+var fetch_messages = function() {
   $.ajax({
     type: "GET",
-    url: "http://getsimpleform.com/messages.js?api_token=0cf647952037956972ffb9a65dbb32bf",
+    url: "http://getsimpleform.com/messages.js?api_token=2dc76d4d4fc8ff48783cfc993ab4330a",
     dataType: 'jsonp',
     success: function(data) {
+      data = data.reverse();
+      $('#guestbook_entries').empty();
       $.each(data, function(key, val) {
         htmlstring = "<div class=\"panel\">";
         htmlstring += "<div class=\"panel-heading\">";
         htmlstring += "<h3 class=\"panel-title\">" + val.data.name + "</h3>";
+        htmlstring += "<p class=\"text-muted\">" + val.created_at.replace("T", " ").replace("Z", "") + "</p>";
         htmlstring +=  "</div>";
         htmlstring += "<div class=\"panel-body\">";
-        htmlstring += val.data.extra;
+        htmlstring += val.data.extra.replace(/\r?\n/g, '<br />');
         htmlstring +=  "</div>";
         htmlstring +=  "</div>";
         $('#guestbook_entries').append(htmlstring);
       });
     }
+  });
+}
+
+if (document.getElementById("guestbook_entries")) {
+  fetch_messages();
+}
+
+if (document.getElementById("guestbookForm")) {
+  $('#submit').click(function() {
+    $("div#name-group").removeClass('has-error');
+    $("div#email-group").removeClass('has-error');
+    $("div#extra-group").removeClass('has-error');
+
+    var name = escape($("input#name").val());
+    var email = $("input#email").val();
+    var extra = escape($("textarea#extra").val());
+
+    var rgx = /(\d{2})\/(\d{2})\/(\d{4})/;
+
+    if (name == "") {
+      $("div#name-group").addClass('has-error');
+      $("input#name").focus();
+      return false;
+    }
+
+    if (email == "") {
+      $("div#email-group").addClass('has-error');
+      $("input#email").focus();
+      return false;
+    }
+
+    if (extra == "") {
+      $("div#extra-group").addClass('has-error');
+      $("textarea#extra").focus();
+      return false;
+    }
+
+    var dataString = 'name='+ name + '&email=' + email + '&extra=' + extra;
+    $.ajax({
+      type: "POST",
+      url: "http://getsimpleform.com/messages/ajax?form_api_token=6c9049299ad46ee4e3a263e70ba4b1fd",
+      data: dataString,
+      dataType: 'jsonp',
+      success: function() {
+        fetch_messages();
+        $('#success').fadeTo(1500, 1);
+      }
+    });
+
+    return false;
   });
 }
