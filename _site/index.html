@@ -1,0 +1,846 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/css/vendor/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/vendor/calendar.min.css">
+    <link rel="stylesheet" href="/css/main.css">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,700' rel='stylesheet' type='text/css'>
+    <script src="/js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+  </head>
+  <body>
+    <!--[if lt IE 7]>
+    <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/">
+        <span class="glyphicon glyphicon-home"></span>
+        Pech Guillou
+      </a>
+    </div>
+    <div class="navbar-collapse collapse pull-right">
+      <ul class="nav navbar-nav">
+        <li  class="active" ><a href="/"><span class="glyphicon glyphicon-home"></span>The House</a></li>
+        <li ><a href="/availability"><span class="glyphicon glyphicon-calendar"></span>Availability</a></li>
+        <li ><a href="/contact"><span class="glyphicon glyphicon-envelope"></span>Contact</a></li>
+        <li ><a href="/route"><span class="glyphicon glyphicon-road"></span>Route</a></li>
+        <li ><a href="/guestbook"><span class="glyphicon glyphicon-comment"></span>Guestbook</a></li>
+      </ul>
+    </div><!--/.navbar-collapse -->
+  </div>
+</div>
+
+    <div class="above-fold">
+  <div class="center center-title">
+    <h2 class="main-title">holiday dream house</h2>
+    <br >
+    <a class="slowscroll" href="#jump">
+      &nbsp;Learn more&nbsp;
+      <span class="glyphicon glyphicon-chevron-down"></span>
+    </a>
+  </div>
+  <div id="jump" class="below-fold">
+    <div class="color-row" >
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="center">
+              <h2 class="white-subtitle">
+                about pech guillou
+              </h2>
+            </div>
+            <p>
+              Frequently described as one of the finest houses in the area, Pech Guillou is a medieval hunting lodge. It sits in an elevated position offering breathtaking views which have changed little over the centuries. The traditional stone manoir house offers comfortable accommodation. There are eight bedrooms sleeping 14-17 people, a heated swimming pool, a boules court, a games room and a summer kitchen to make outdoor dining easy.
+            </p>
+
+            <p>
+              Of course the house has full central heating, so it’s ideal for use outside the normal holiday season. While winter weather can never be guaranteed, the winters here are usually mild. Longer-term rentals are possible. The layout of the house provides versatile accommodation. Out of season the manoir can be rented for smaller numbers. In addition the house and outbuildings could be used by groups such as artists, photographers, or for activities like yoga, wine courses etc.
+            </p>
+
+            <p>
+              Please feel free to contact us to discuss possibilities. We wish you a pleasant stay on our website!
+            </p>
+
+            <p>
+              Kind regards,<br >
+              Bart &amp; Sabine
+            </p>
+
+          </div>
+        </div>
+      </div> <!-- container -->
+    </div>
+    <div class="container">
+      <ul class="nav nav-tabs" style="margin-top:25px;">
+        <li class=""><a href="#gallery" data-toggle="tab">
+            <span class="glyphicon glyphicon-certificate"></span>
+            The House</a>
+        </li>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+            <span class="glyphicon glyphicon-tower"></span>
+            Bedrooms <span class="caret"></span>
+          </a>
+          <ul class="dropdown-menu">
+            <li role="presentation" class="dropdown-header">Adult bedrooms</li>
+            <li role="presentation" class="divider"></li>
+            <li><a href="#room1" data-toggle="tab">Suite Coloniale</a></li>
+            <li><a href="#room2" data-toggle="tab">Chambre des Oliviers</a></li>
+            <li><a href="#room3" data-toggle="tab">Chambre La Vie en Rose</a></li>
+            <li><a href="#room4" data-toggle="tab">Chambre de la Lavande </a></li>
+            <li role="presentation" class="divider"></li>
+            <li role="presentation" class="dropdown-header">Teen/Children bedrooms</li>
+            <li role="presentation" class="divider"></li>
+            <li><a href="#room5" data-toggle="tab">Pigonnier Tower (2)</a></li>
+            <li><a href="#room6" data-toggle="tab">Loft (2)</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+            <span class="glyphicon glyphicon-cutlery"></span>
+            Equipment <span class="caret"></span>
+          </a>
+          <ul class="dropdown-menu">
+            <li><a href="#kitchen" data-toggle="tab">Kitchen</a></li>
+            <li><a href="#outdoorkitchen" data-toggle="tab">Outdoor Kitchen</a></li>
+            <li><a href="#dining" data-toggle="tab">Dining Room</a></li>
+            <li><a href="#lounge" data-toggle="tab">Sitting Room</a></li>
+            <li><a href="#laundry" data-toggle="tab">Laundry</a></li>
+          </ul>
+        </li>
+        <li class=""><a href="#swimming" data-toggle="tab">
+            <span class="glyphicon glyphicon-certificate"></span>
+            Swimming pool</a>
+        </li>
+      </ul>
+
+      <div id="myTabContent" class="tab-content">
+        <div class="tab-pane fade active in" id="gallery">
+          <div class="row">
+            <div class="col-lg-12">
+              <h3 class="subtitle">The House</h3>
+              <div id="carousel-gallery" class="carousel slide" data-ride="carousel">
+
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                  
+                  <li data-target="#carousel-gallery" data-slide-to="0" class="active"></li>
+                  
+                  <li data-target="#carousel-gallery" data-slide-to="1" ></li>
+                  
+                  <li data-target="#carousel-gallery" data-slide-to="2" ></li>
+                  
+                  <li data-target="#carousel-gallery" data-slide-to="3" ></li>
+                  
+                  <li data-target="#carousel-gallery" data-slide-to="4" ></li>
+                  
+                  <li data-target="#carousel-gallery" data-slide-to="5" ></li>
+                  
+                  <li data-target="#carousel-gallery" data-slide-to="6" ></li>
+                  
+                </ol>
+
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner">
+                  
+                  <div class="item active">
+                    <img src="/img/pictures/Z THE HOUSE 1.JPG" width="100%" alt="Z THE HOUSE 1.JPG">
+                  </div>
+                  
+                  <div class="item ">
+                    <img src="/img/pictures/Z THE HOUSE 10.JPG" width="100%" alt="Z THE HOUSE 10.JPG">
+                  </div>
+                  
+                  <div class="item ">
+                    <img src="/img/pictures/Z THE HOUSE 2.JPG" width="100%" alt="Z THE HOUSE 2.JPG">
+                  </div>
+                  
+                  <div class="item ">
+                    <img src="/img/pictures/Z THE HOUSE 4.JPG" width="100%" alt="Z THE HOUSE 4.JPG">
+                  </div>
+                  
+                  <div class="item ">
+                    <img src="/img/pictures/Z THE HOUSE 5.JPG" width="100%" alt="Z THE HOUSE 5.JPG">
+                  </div>
+                  
+                  <div class="item ">
+                    <img src="/img/pictures/Z THE HOUSE 7.JPG" width="100%" alt="Z THE HOUSE 7.JPG">
+                  </div>
+                  
+                  <div class="item ">
+                    <img src="/img/pictures/Z THE HOUSE 9.JPG" width="100%" alt="Z THE HOUSE 9.JPG">
+                  </div>
+                  
+                </div>
+
+                <!-- Controls -->
+                <a class="left carousel-control" href="#carousel-gallery" data-slide="prev">
+                  <span class="glyphicon glyphicon-chevron-left"></span>
+                </a>
+                <a class="right carousel-control" href="#carousel-gallery" data-slide="next">
+                  <span class="glyphicon glyphicon-chevron-right"></span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane fade" id="room1">
+          <div class="row">
+            <div class="col-lg-4">
+              <h3 class="subtitle">Suite Coloniale</h3>
+              <ul>
+                <li>King-size boxspring double bed</li>
+                <li>En-suite bathroom (shower, hair dryer)</li>
+                <li>Situated next to the pool</li>
+              </ul>
+            </div>
+            <div class="col-lg-8">
+              <div id="carousel-room1" class="carousel slide" data-ride="carousel">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                  
+                  <li data-target="#carousel-room1" data-slide-to="0" class="active"></li>
+                  
+                  <li data-target="#carousel-room1" data-slide-to="1" ></li>
+                  
+                  <li data-target="#carousel-room1" data-slide-to="2" ></li>
+                  
+                  <li data-target="#carousel-room1" data-slide-to="3" ></li>
+                  
+                </ol>
+
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner">
+                  
+                  <div class="item active">
+                    <img src="/img/pictures/N Chambre Coloniale 1.JPG" width="100%" alt="N Chambre Coloniale 1.JPG">
+                  </div>
+                  
+                  <div class="item ">
+                    <img src="/img/pictures/N Chambre Coloniale 3.JPG" width="100%" alt="N Chambre Coloniale 3.JPG">
+                  </div>
+                  
+                  <div class="item ">
+                    <img src="/img/pictures/N Chambre Coloniale 4.JPG" width="100%" alt="N Chambre Coloniale 4.JPG">
+                  </div>
+                  
+                  <div class="item ">
+                    <img src="/img/pictures/N Chambre Coloniale 5.JPG" width="100%" alt="N Chambre Coloniale 5.JPG">
+                  </div>
+                  
+                </div>
+
+                <!-- Controls -->
+                <a class="left carousel-control" href="#carousel-room1" data-slide="prev">
+                  <span class="glyphicon glyphicon-chevron-left"></span>
+                </a>
+                <a class="right carousel-control" href="#carousel-room1" data-slide="next">
+                  <span class="glyphicon glyphicon-chevron-right"></span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane fade" id="room2">
+          <div class="row">
+            <div class="col-lg-4">
+              <h3 class="subtitle">Chambre des Oliviers</h3>
+              <ul>
+                <li>King-size boxspring double bed</li>
+                <li>Lavatoire (hair dryer)</li>
+                <li>Situated at the ground floor level</li>
+              </li>
+            </div>
+            <div class="col-lg-8">
+              <div id="carousel-room2" class="carousel slide" data-ride="carousel">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                  
+                  <li data-target="#carousel-room2" data-slide-to="0" class="active"></li>
+                  
+                </ol>
+
+                <div class="carousel-inner">
+                  
+                  <div class="item active">
+                    <img src="/img/pictures/Y THE GREEN TEA ROOM 3.JPG" width="100%" alt="Y THE GREEN TEA ROOM 3.JPG">
+                  </div>
+                  
+                </div>
+
+                <!-- Controls -->
+                <a class="left carousel-control" href="#carousel-room2" data-slide="prev">
+                  <span class="glyphicon glyphicon-chevron-left"></span>
+                </a>
+                <a class="right carousel-control" href="#carousel-room2" data-slide="next">
+                  <span class="glyphicon glyphicon-chevron-right"></span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane fade" id="room3">
+          <div class="row">
+            <div class="col-lg-4">
+              <h3 class="subtitle">Chambre La Vie en Rose</h3>
+              <ul>
+                <li>King-size boxspring double bed</li>
+                <li>En suite bathroom (bath, hair dryer)</li>
+                <li>Situated at the ground floor level</li>
+              </li>
+            </div>
+            <div class="col-lg-8">
+              <div id="carousel-room3" class="carousel slide" data-ride="carousel">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                  
+                  <li data-target="#carousel-room3" data-slide-to="0" class="active"></li>
+                  
+                  <li data-target="#carousel-room3" data-slide-to="1" ></li>
+                  
+                  <li data-target="#carousel-room3" data-slide-to="2" ></li>
+                  
+                </ol>
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner">
+                  
+                  <div class="item active">
+                    <img src="/img/pictures/O La vie En Rose Chambre 1.JPG" width="100%" alt="O La vie En Rose Chambre 1.JPG">
+                  </div>
+                  
+                  <div class="item ">
+                    <img src="/img/pictures/O La vie En Rose Chambre 2.JPG" width="100%" alt="O La vie En Rose Chambre 2.JPG">
+                  </div>
+                  
+                  <div class="item ">
+                    <img src="/img/pictures/O La vie En Rose Chambre 4.JPG" width="100%" alt="O La vie En Rose Chambre 4.JPG">
+                  </div>
+                  
+                </div>
+                <!-- Controls -->
+                <a class="left carousel-control" href="#carousel-room3" data-slide="prev">
+                  <span class="glyphicon glyphicon-chevron-left"></span>
+                </a>
+                <a class="right carousel-control" href="#carousel-room3" data-slide="next">
+                  <span class="glyphicon glyphicon-chevron-right"></span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane fade" id="room4">
+          <div class="row">
+            <div class="col-lg-4">
+              <h3 class="subtitle">Chambre de la Lavande</h3>
+              <ul>
+                <li>King-size boxspring double bed</li>
+                <li>En suite bathroom (shower, hair dryer)</li>
+                <li>Situated at the ground floor level</li>
+              </li>
+            </div>
+            <div class="col-lg-8">
+              <div id="carousel-room4" class="carousel slide" data-ride="carousel">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                  
+                  <li data-target="#carousel-room4" data-slide-to="0" class="active"></li>
+                  
+                  <li data-target="#carousel-room4" data-slide-to="1" ></li>
+                  
+                </ol>
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner">
+                  
+                  <div class="item active">
+                    <img src="/img/pictures/Q  Chambre de Lavande 2.JPG" width="100%" alt="Q  Chambre de Lavande 2.JPG">
+                  </div>
+                  
+                  <div class="item ">
+                    <img src="/img/pictures/Q Chambre de Lavande 1.JPG" width="100%" alt="Q Chambre de Lavande 1.JPG">
+                  </div>
+                  
+                </div>
+                <!-- Controls -->
+                <a class="left carousel-control" href="#carousel-room4" data-slide="prev">
+                  <span class="glyphicon glyphicon-chevron-left"></span>
+                </a>
+                <a class="right carousel-control" href="#carousel-room4" data-slide="next">
+                  <span class="glyphicon glyphicon-chevron-right"></span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane fade" id="room5">
+          <div class="row">
+            <div class="col-lg-4">
+              <h3 class="subtitle">Pigonnier Tower</h3>
+              <ul>
+                <li>2 bunk beds on first floor</li>
+                <li>Hair dryer</li>
+                <li>Twin bedded room on second floor</li>
+              </li>
+            </div>
+            <div class="col-lg-8">
+              <div id="carousel-room5" class="carousel slide" data-ride="carousel">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                  
+                  <li data-target="#carousel-room1" data-slide-to="0" class="active"></li>
+                  
+                  <li data-target="#carousel-room1" data-slide-to="1" ></li>
+                  
+                </ol>
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner">
+                  
+                  <div class="item active">
+                    <img src="/img/pictures/R THE PIGONNER 1.JPG" width="100%" alt="R THE PIGONNER 1.JPG">
+                  </div>
+                  
+                  <div class="item ">
+                    <img src="/img/pictures/R THE PIGONNER 2.JPG" width="100%" alt="R THE PIGONNER 2.JPG">
+                  </div>
+                  
+                </div>
+                <!-- Controls -->
+                <a class="left carousel-control" href="#carousel-room5" data-slide="prev">
+                  <span class="glyphicon glyphicon-chevron-left"></span>
+                </a>
+                <a class="right carousel-control" href="#carousel-room5" data-slide="next">
+                  <span class="glyphicon glyphicon-chevron-right"></span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane fade" id="room6">
+          <div class="row">
+            <div class="col-lg-4">
+              <h3 class="subtitle">Loft</h3>
+              <ul>
+                <li>triple single bedded room</li>
+                <li>en suite bathroom (shower, hair dryer)</li>
+                <li>twin bedded room</li>
+              </li>
+            </div>
+            <div class="col-lg-8">
+              <div id="carousel-room6" class="carousel slide" data-ride="carousel">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                  
+                  <li data-target="#carousel-room6" data-slide-to="0" class="active"></li>
+                  
+                  <li data-target="#carousel-room6" data-slide-to="1" ></li>
+                  
+                  <li data-target="#carousel-room6" data-slide-to="2" ></li>
+                  
+                  <li data-target="#carousel-room6" data-slide-to="3" ></li>
+                  
+                </ol>
+
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner">
+                  
+                  <div class="item active">
+                    <img src="/img/pictures/S LOFT 2beds 1.JPG" width="100%" alt="S LOFT 2beds 1.JPG">
+                  </div>
+                  
+                  <div class="item ">
+                    <img src="/img/pictures/S LOFT 2beds 2.JPG" width="100%" alt="S LOFT 2beds 2.JPG">
+                  </div>
+                  
+                  <div class="item ">
+                    <img src="/img/pictures/S LOFT 3.JPG" width="100%" alt="S LOFT 3.JPG">
+                  </div>
+                  
+                  <div class="item ">
+                    <img src="/img/pictures/S LOFT 4.JPG" width="100%" alt="S LOFT 4.JPG">
+                  </div>
+                  
+                </div>
+
+                <!-- Controls -->
+                <a class="left carousel-control" href="#carousel-room6" data-slide="prev">
+                  <span class="glyphicon glyphicon-chevron-left"></span>
+                </a>
+                <a class="right carousel-control" href="#carousel-room6" data-slide="next">
+                  <span class="glyphicon glyphicon-chevron-right"></span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane fade" id="kitchen">
+          <div class="row">
+            <div class="col-lg-4">
+              <h3 class="subtitle">Kitchen</h3>
+              <ul>
+                <li>Microwave Oven</li>
+                <li>Gas Oven</li>
+                <li>Fridge / Freezer</li>
+                <li>Dishwasher</li>
+                <li>Water cooker</li>
+                <li>Toaster</li>
+                <li>Coffeemaker + Senseo</li>
+              </ul>
+            </div>
+            <div class="col-lg-8">
+              <div id="carousel-kitchen" class="carousel slide" data-ride="carousel">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                  
+                  <li data-target="#carousel-kitchen" data-slide-to="0" class="active"></li>
+                  
+                </ol>
+
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner">
+                  
+                  <div class="item active">
+                    <img src="/img/pictures/L KITCHEN 2.JPG" width="100%" alt="L KITCHEN 2.JPG">
+                  </div>
+                  
+                </div>
+
+                <!-- Controls -->
+                <a class="left carousel-control" href="#carousel-kitchen" data-slide="prev">
+                  <span class="glyphicon glyphicon-chevron-left"></span>
+                </a>
+                <a class="right carousel-control" href="#carousel-kitchen" data-slide="next">
+                  <span class="glyphicon glyphicon-chevron-right"></span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane fade" id="outdoorkitchen">
+          <div class="row">
+            <div class="col-lg-4">
+              <h3 class="subtitle">Outdoor Kitchen</h3>
+              <ul>
+                <li>2x Classic Barbeque</li>
+                <li>Stone Oven</li>
+                <li>Fridge</li>
+              </ul>
+            </div>
+            <div class="col-lg-8">
+              <div id="carousel-outdoorkitchen" class="carousel slide" data-ride="carousel">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                  
+                  <li data-target="#carousel-outdoorkitchen" data-slide-to="0" class="active"></li>
+                  
+                  <li data-target="#carousel-outdoorkitchen" data-slide-to="1" ></li>
+                  
+                </ol>
+
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner">
+                  
+                  <div class="item active">
+                    <img src="/img/pictures/D OVEN 1.JPG" width="100%" alt="D OVEN 1.JPG">
+                  </div>
+                  
+                  <div class="item ">
+                    <img src="/img/pictures/D OVEN FRESH BREAD 3.JPG" width="100%" alt="D OVEN FRESH BREAD 3.JPG">
+                  </div>
+                  
+                </div>
+
+                <!-- Controls -->
+                <a class="left carousel-control" href="#carousel-outdoorkitchen" data-slide="prev">
+                  <span class="glyphicon glyphicon-chevron-left"></span>
+                </a>
+                <a class="right carousel-control" href="#carousel-outdoorkitchen" data-slide="next">
+                  <span class="glyphicon glyphicon-chevron-right"></span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane fade" id="dining">
+          <div class="row">
+            <div class="col-lg-4">
+              <h3 class="subtitle">Dining Room</h3>
+              <ul>
+                <li>10+ accomodation</li>
+                <li>Fireplace</li>
+              </ul>
+            </div>
+            <div class="col-lg-8">
+              <div id="carousel-dining" class="carousel slide" data-ride="carousel">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                  
+                  <li data-target="#carousel-dining" data-slide-to="0" class="active"></li>
+                  
+                  <li data-target="#carousel-dining" data-slide-to="1" ></li>
+                  
+                  <li data-target="#carousel-dining" data-slide-to="2" ></li>
+                  
+                </ol>
+
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner">
+                  
+                  <div class="item active">
+                    <img src="/img/pictures/K THE DINNING ROOM 1.JPG" width="100%" alt="K THE DINNING ROOM 1.JPG">
+                  </div>
+                  
+                  <div class="item ">
+                    <img src="/img/pictures/K THE DINNING ROOM 2.JPG" width="100%" alt="K THE DINNING ROOM 2.JPG">
+                  </div>
+                  
+                  <div class="item ">
+                    <img src="/img/pictures/K THE DINNING ROOM 4.JPG" width="100%" alt="K THE DINNING ROOM 4.JPG">
+                  </div>
+                  
+                </div>
+
+                <!-- Controls -->
+                <a class="left carousel-control" href="#carousel-dining" data-slide="prev">
+                  <span class="glyphicon glyphicon-chevron-left"></span>
+                </a>
+                <a class="right carousel-control" href="#carousel-dining" data-slide="next">
+                  <span class="glyphicon glyphicon-chevron-right"></span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane fade" id="lounge">
+          <div class="row">
+            <div class="col-lg-4">
+              <h3 class="subtitle">Sitting Room</h3>
+              <ul>
+                <li>Television set with DVD player</li>
+                <li>Hifi set with CD player</li>
+                <li>Wireless internet access<br> (further coverage may vary)</li>
+                <li>Comics, books and boardgames</li>
+              </ul>
+            </div>
+            <div class="col-lg-8">
+              <div id="carousel-lounge" class="carousel slide" data-ride="carousel">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                  
+                  <li data-target="#carousel-room1" data-slide-to="0" class="active"></li>
+                  
+                  <li data-target="#carousel-room1" data-slide-to="1" ></li>
+                  
+                  <li data-target="#carousel-room1" data-slide-to="2" ></li>
+                  
+                </ol>
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner">
+                  
+                  <div class="item active">
+                    <img src="/img/pictures/J SITTING ROOM 1.JPG" width="100%" alt="J SITTING ROOM 1.JPG">
+                  </div>
+                  
+                  <div class="item ">
+                    <img src="/img/pictures/J SITTING ROOM 2.JPG" width="100%" alt="J SITTING ROOM 2.JPG">
+                  </div>
+                  
+                  <div class="item ">
+                    <img src="/img/pictures/J SITTING ROOM 3.JPG" width="100%" alt="J SITTING ROOM 3.JPG">
+                  </div>
+                  
+                </div>
+                <!-- Controls -->
+                <a class="left carousel-control" href="#carousel-lounge" data-slide="prev">
+                  <span class="glyphicon glyphicon-chevron-left"></span>
+                </a>
+                <a class="right carousel-control" href="#carousel-lounge" data-slide="next">
+                  <span class="glyphicon glyphicon-chevron-right"></span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane fade" id="laundry">
+          <div class="row">
+            <div class="col-lg-4">
+              <h3 class="subtitle">Laundry</h3>
+              <ul>
+                <li>Washing machine</li>
+                <li>Tumble dryer</li>
+                <li>Vacuum cleaner</li>
+                <li>Ironing board with flat iron</li>
+              </ul>
+            </div>
+            <div class="col-lg-8">
+              <div id="carousel-laundry" class="carousel slide" data-ride="carousel">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                  
+                  <li data-target="#carousel-laundry" data-slide-to="0" class="active"></li>
+                  
+                </ol>
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner">
+                  
+                  <div class="item active">
+                    <img src="/img/pictures/T LAUNDRY ROOM1.JPG" width="100%" alt="T LAUNDRY ROOM1.JPG">
+                  </div>
+                  
+                </div>
+                <!-- Controls -->
+                <a class="left carousel-control" href="#carousel-laundry" data-slide="prev">
+                  <span class="glyphicon glyphicon-chevron-left"></span>
+                </a>
+                <a class="right carousel-control" href="#carousel-laundry" data-slide="next">
+                  <span class="glyphicon glyphicon-chevron-right"></span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane fade" id="swimming">
+          <div class="row">
+            <div class="col-lg-4">
+              <h3 class="subtitle">Swimming pool</h3>
+              <ul>
+                <li>Multiple levels</li>
+                <li>Covered</li>
+                <li>Temperature managed</li>
+                <li>Sun loungers with cushions</li>
+                <li>Outdoor shower</li>
+              </ul>
+            </div>
+            <div class="col-lg-8">
+              <div id="carousel-swimming" class="carousel slide" data-ride="carousel">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                  
+                  <li data-target="#carousel-swimming" data-slide-to="0" class="active"></li>
+                  
+                  <li data-target="#carousel-swimming" data-slide-to="1" ></li>
+                  
+                  <li data-target="#carousel-swimming" data-slide-to="2" ></li>
+                  
+                  <li data-target="#carousel-swimming" data-slide-to="3" ></li>
+                  
+                </ol>
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner">
+                  
+                  <div class="item active">
+                    <img src="/img/pictures/B THE POOL 1.JPG" width="100%" alt="B THE POOL 1.JPG">
+                  </div>
+                  
+                  <div class="item ">
+                    <img src="/img/pictures/B THE POOL 2.JPG" width="100%" alt="B THE POOL 2.JPG">
+                  </div>
+                  
+                  <div class="item ">
+                    <img src="/img/pictures/B THE POOL 3.JPG" width="100%" alt="B THE POOL 3.JPG">
+                  </div>
+                  
+                  <div class="item ">
+                    <img src="/img/pictures/B THE POOL 4.JPG" width="100%" alt="B THE POOL 4.JPG">
+                  </div>
+                  
+                </div>
+                <!-- Controls -->
+                <a class="left carousel-control" href="#carousel-swimming" data-slide="prev">
+                  <span class="glyphicon glyphicon-chevron-left"></span>
+                </a>
+                <a class="right carousel-control" href="#carousel-swimming" data-slide="next">
+                  <span class="glyphicon glyphicon-chevron-right"></span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <hr>
+
+<footer>
+  <div class="center">
+    <p>&copy; Bart &amp; Sabine 2014 - Pech Guillou - Holiday dream house</p>
+  </div>
+</footer>
+
+    </div>
+  </div>
+</div>
+
+
+    <!-- /container -->
+    <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?key=AIzaSyB9nKurHY0o4yxOPYwPv5m0kHI-CnPdvm0&amp;sensor=false&amp;language=en"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="/js/vendor/jquery-1.11.0.min.js"><\/script>')</script>
+    <script src="/js/vendor/bootstrap.min.js"></script>
+    <script src="/js/vendor/underscore-min.js"></script>
+    <script src="/js/vendor/calendar.min.js"></script>
+    <script src="/js/main.js"></script>
+    <script type="text/javascript">
+      var calendar = $("#calendar").calendar(
+          {
+            tmpl_path: "/tmpls/",
+            events_source: function () {
+              return [
+                {
+                  "id": 2,
+                    "title": "Booked from 18/07/2015 until 25/07/2015",
+                    "class": "event-important",
+                    "start": 1437170400000, // Milliseconds
+                    "end": 1437775200000// Milliseconds
+                },
+                {
+                  "id": 3,
+                    "title": "Booked from 25/07/2015 until 01/08/2015",
+                    "class": "event-important",
+                    "start": 1437775200000, // Milliseconds
+                    "end": 1438380000000 // Milliseconds
+                },
+                {
+                  "id": 4,
+                    "title": "Booked from 15/08/2015 until 29/08/2015",
+                    "class": "event-important",
+                    "start": 1439589600000, // Milliseconds
+                    "end": 1440799200000 // Milliseconds
+                },
+              ];
+            },
+          onAfterViewLoad: function(view) {
+            $('#calendar-date').text(this.getTitle());
+            $('.btn-group button').removeClass('active');
+            $('button[data-calendar-view="' + view + '"]').addClass('active');
+          }
+          });
+    </script>
+
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+    <script>
+      (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+                                                              function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+      e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+      e.src='//www.google-analytics.com/analytics.js';
+      r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+      ga('create','UA-51509854-1');
+      ga('require', 'displayfeatures');
+      ga('send','pageview');
+    </script>
+    </body>
+  </html>
