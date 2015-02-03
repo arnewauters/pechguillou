@@ -122,7 +122,7 @@ if (document.getElementById("contactForm")) {
                      + '&from=' + from + '&to=' + to + '&extra=' + extra;
     $.ajax({
       type: "POST",
-      url: "http://getsimpleform.com/messages/ajax?form_api_token=1e02b8615467c549d4b89ed9d94998a5",
+      url: "https://getsimpleform.com/messages?form_api_token=7387d21ec9d2d71bacfaae6055ebbc81",
       data: dataString,
       dataType: 'jsonp',
       success: function() {

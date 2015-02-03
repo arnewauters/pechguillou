@@ -96,14 +96,14 @@ title: The House
 
                 <!-- Indicators -->
                 <ol class="carousel-indicators">
-                  {% directory path: img/pictures include: .+\/Z.+JPG %}
+                  {% directory path: img/pictures include: .+\/A.+JPG %}
                   <li data-target="#carousel-gallery" data-slide-to="{{ forloop.index0 }}" {% if forloop.first %}class="active"{% endif %}></li>
                   {% enddirectory %}
                 </ol>
 
                 <!-- Wrapper for slides -->
                 <div class="carousel-inner">
-                  {% directory path: img/pictures include: .+\/Z.+JPG %}
+                  {% directory path: img/pictures include: .+\/A.+JPG %}
                   <div class="item {% if forloop.first %}active{% endif %}">
                     <img src="{{ file.url }}" width="100%" alt="{{ file.name }}">
                   </div>
@@ -174,13 +174,13 @@ title: The House
               <div id="carousel-room2" class="carousel slide" data-ride="carousel">
                 <!-- Indicators -->
                 <ol class="carousel-indicators">
-                  {% directory path: img/pictures include: .+\/Y.+JPG %}
+                  {% directory path: img/pictures include: .+\/P.+JPG %}
                   <li data-target="#carousel-room2" data-slide-to="{{ forloop.index0 }}" {% if forloop.first %}class="active"{% endif %}></li>
                   {% enddirectory %}
                 </ol>
 
                 <div class="carousel-inner">
-                  {% directory path: img/pictures include: .+\/Y.+JPG %}
+                  {% directory path: img/pictures include: .+\/P.+JPG %}
                   <div class="item {% if forloop.first %}active{% endif %}">
                     <img src="{{ file.url }}" width="100%" alt="{{ file.name }}">
                   </div>
