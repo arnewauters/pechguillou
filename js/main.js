@@ -13,6 +13,39 @@ $(function() {
   });
 });
 
+if (document.getElementById("calendar")) {
+  var calendar;
+  function showInfo(data, tabletop) {
+    var i = 0;
+    var source = data.map(function(item) {
+      return {
+        "id": i++,
+        "title": item["Title"],
+        "class": item["Kind"],
+        "start": item["Start (Calculated)"],
+        "end": item["End (Calculated)"]
+      }
+    });
+
+    calendar = $("#calendar").calendar(
+      {
+      tmpl_path: "/tmpls/",
+      events_source: source,
+      onAfterViewLoad: function(view) {
+        $('#calendar-date').text(this.getTitle());
+        $('.btn-group button').removeClass('active');
+        $('button[data-calendar-view="' + view + '"]').addClass('active');
+      }
+    });
+  }
+
+  var tabletop = Tabletop.init({
+    key: '1czwBVqDokV6HjpU1Bn5cIw_uKP9DQB4jiYiMJsnnhe8',
+    callback: showInfo,
+    simpleSheet: true
+  })
+};
+
 $('.btn-group button[data-calendar-nav]').each(function() {
   var $this = $(this);
   $this.click(function() {
@@ -89,7 +122,7 @@ if (document.getElementById("contactForm")) {
                      + '&from=' + from + '&to=' + to + '&extra=' + extra;
     $.ajax({
       type: "POST",
-      url: "http://getsimpleform.com/messages/ajax?form_api_token=1e02b8615467c549d4b89ed9d94998a5",
+      url: "https://getsimpleform.com/messages?form_api_token=7387d21ec9d2d71bacfaae6055ebbc81",
       data: dataString,
       dataType: 'jsonp',
       success: function() {
