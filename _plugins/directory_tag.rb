@@ -26,6 +26,8 @@
 # - `title` - The titlecase'd slug
 #
 
+require 'byebug'
+
 module Jekyll
 
   class DirectoryTag < Liquid::Block
@@ -44,6 +46,7 @@ module Jekyll
       end
 
       @path     = attributes['path']   || '.'
+      attributes['include'] = attributes['include'].chomp("'").reverse.chomp("'").reverse if attributes['include']
       @include  = Regexp.new(attributes['include'] || '^.+[^(.html)]', Regexp::EXTENDED | Regexp::IGNORECASE)
       @rev      = attributes['reverse'].nil?
 
